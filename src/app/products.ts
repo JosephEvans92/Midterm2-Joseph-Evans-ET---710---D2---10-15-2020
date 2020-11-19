@@ -32,6 +32,7 @@ export const r1 = {
     "country": "USA",
     "email": "jevans@qcc.cuny.edu"
   },
+  
   "phoneNumbers": [
     {
       "type": "home",
@@ -41,6 +42,7 @@ export const r1 = {
       "type": "office",
       "number": "646 555-4567"
     }
+
   ],
 "languages":[
 	{
@@ -49,8 +51,15 @@ export const r1 = {
 	},
 	
 		{
+      
 		"language": "Spanish",
-		"level": "20%"
+		"level": "20%",
+    "color": "blue",
+      "category": "hue",
+      "type": "primary",
+      "code": {
+        "rgba": [0,0,255,1],
+        "hex": "#00F"
 	},
 			
 	
@@ -60,6 +69,7 @@ export const r1 = {
 	{
 		"skill": "HTLM",
 		"level": "95%"
+    
 	},
 	
 		{
