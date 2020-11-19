@@ -13,6 +13,7 @@ import { CartComponent } from './cart/cart.component';
 import { CartService } from './cart.service';
 import { ShippingComponent } from './shipping/shipping.component';
 import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
+import { MyResumeComponent } from './my-resume/my-resume.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
        { path: 'graphic-design', component: GraphicDesignComponent },
-      
+      { path: 'my-resume', component: MyResumeComponent },
     ])
   ],
   declarations: [
@@ -36,7 +37,8 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    GraphicDesignComponent
+    GraphicDesignComponent,
+    MyResumeComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
