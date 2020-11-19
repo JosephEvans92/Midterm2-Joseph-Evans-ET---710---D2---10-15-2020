@@ -14,10 +14,10 @@ import { CartService } from './cart.service';
 import { ShippingComponent } from './shipping/shipping.component';
 import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
-import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
-import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
 import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
+import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
+import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 
 @NgModule({
   imports: [
