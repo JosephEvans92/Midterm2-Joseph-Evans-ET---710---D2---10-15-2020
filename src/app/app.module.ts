@@ -12,7 +12,6 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { CartService } from './cart.service';
 import { ShippingComponent } from './shipping/shipping.component';
-import { MyResumeComponent } from './my-resume/my-resume.component';
 import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
 
 @NgModule({
@@ -37,7 +36,6 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    MyResumeComponent,
     GraphicDesignComponent
   ],
   bootstrap: [ AppComponent ],

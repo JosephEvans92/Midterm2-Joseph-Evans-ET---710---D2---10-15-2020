@@ -8,14 +8,14 @@ import { CartService } from '../cart.service';
   styleUrls: ['./graphic-design.component.css']
 })
 export class GraphicDesignComponent implements OnInit {
-graphicitem;
+portfolioItems;
 
   constructor(
      private cartService: CartService
   ) { }
 
   ngOnInit() {
-    this.graphicitem = this.cartService.getPortfolio();
+    this.portfolioItems = this.cartService.getPortfolio();
   }
 
 }
