@@ -16,6 +16,7 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
+import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profile.component';
 
 @NgModule({
   imports: [
@@ -42,7 +43,8 @@ import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.c
     GraphicDesignComponent,
     MyResumeComponent,
     ResumeEducationComponent,
-    ResumeFooterComponent
+    ResumeFooterComponent,
+    ResumeProfileComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
