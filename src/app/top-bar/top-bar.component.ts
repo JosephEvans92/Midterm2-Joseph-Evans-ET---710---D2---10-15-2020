@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class TopBarComponent implements OnInit {
 
   constructor() { }
-
+  
+  isOffcanvas = true;
+  
   ngOnInit() {
   }
 

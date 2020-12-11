@@ -1,4 +1,30 @@
 import { HttpClientModule } from '@angular/common/http';
+
+
+import { LightboxModule } from 'ngx-lightbox';
+
+import {
+  AccordionModule,
+  AlertModule,        // Foundation Callouts
+  ButtonsModule,
+  CarouselModule,     // Foundation Orbit
+  CollapseModule,
+  BsDatepickerModule,
+  BsDropdownModule,   // Foundation Dropdown Menus and Dropdown Panes
+  ModalModule,        // Foundation Reveal
+  OffcanvasModule,
+  PaginationModule,
+  ProgressbarModule,
+  RatingModule,
+  SortableModule,
+  TabsModule,
+  TimepickerModule,
+  TooltipModule,
+  TypeaheadModule,
+} from 'ngx-foundation';
+
+
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -18,12 +44,19 @@ import { ResumeProfileComponent } from './my-resume/resume-profile/resume-profil
 import { ResumeWorkExperienceComponent } from './my-resume/resume-work-experience/resume-work-experience.component';
 import { ResumeEducationComponent } from './my-resume/resume-education/resume-education.component';
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
+import { FngAccordionComponent } from './fng-accordion/fng-accordion.component';
+import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-lightbox.component';
 
 @NgModule({
   imports: [
     BrowserModule,
-     HttpClientModule,
     ReactiveFormsModule,
+    LightboxModule,
+    HttpClientModule,
+    AlertModule.forRoot(),
+    AccordionModule.forRoot(),
+    OffcanvasModule.forRoot(),
+    
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
@@ -46,7 +79,9 @@ import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.c
     ResumeEducationComponent,
     ResumeFooterComponent,
     ResumeProfileComponent,
-    ResumeWorkExperienceComponent
+    ResumeWorkExperienceComponent,
+    FngAccordionComponent,
+    PortfolioLightboxComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]

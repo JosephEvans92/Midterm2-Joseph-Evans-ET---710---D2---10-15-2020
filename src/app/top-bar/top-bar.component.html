@@ -2,9 +2,70 @@
   <h1>My Store</h1>
 </a>
 
-<a routerLink="/cart" class="button fancy-button">
-  <i class="material-icons">shopping_cart</i>Checkout
-</a>
+
+<div class="grid-x grid-margin-x">
+  
+<div class="medium-6 large-3 cell">
+    <button type="button"
+    class="button primary"
+
+      class="button fancy-button"
+
+      [attr.aria-expanded]="!isOffcanvas"
+      aria-controls="offCanvasMenuRight"
+      (click)="offcanvasRight.show()">
+      Menu
+    </button>
+  </div>
+
+</div>
+
+<div [offcanvas]="isOffcanvas"
+  class="off-canvas position-right"
+  id="offCanvasMenuRight"
+  aria-hidden="true"
+  #offcanvasRight="bs-offcanvas">
+  <h4>QCC</h4>
+  <ul class="menu vertical">
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      
+      <a routerLink="/" class="button fancy-button">
+        <i class="material-icons">store</i>My Store
+      </a>
+
+    </li>
+
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      
+      <a routerLink="/cart" class="button fancy-button">
+        <i class="material-icons">shopping_cart</i>Checkout
+      </a>
+      
+    </li>
+
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      
+      <a routerLink="/shipping" class="button fancy-button">
+        <i class="material-icons">local_shipping</i>Shipping
+      </a>
+      
+    </li>
+
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      
+      <a routerLink="/graphic-design" class="button fancy-button">
+        <i class="material-icons">description</i>Graphic Design
+      </a>
+      
+    </li>
+
+  </ul>
+  <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
+    <span aria-hidden="true">×</span>
+  </button>
+</div>
+
+
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
