@@ -59,6 +59,14 @@
       
     </li>
 
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      
+      <a routerLink="/my-resume" class="button fancy-button">
+        <i class="material-icons">description</i>Resume
+      </a>
+      
+    </li>
+
   </ul>
   <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
     <span aria-hidden="true">×</span>
