@@ -1,4 +1,3 @@
-
 .featured-image-block-grid-header {
   margin-left: auto;
   margin-right: auto;
@@ -14,7 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1em;
-  color: #404040;
+  color: #0c0d14;
 }
 
 .featured-image-block a:hover p {
