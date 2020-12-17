@@ -42,6 +42,7 @@ import { ResumeEducationComponent } from './my-resume/resume-education/resume-ed
 import { ResumeFooterComponent } from './my-resume/resume-footer/resume-footer.component';
 import { FngAccordionComponent } from './fng-accordion/fng-accordion.component';
 import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-lightbox.component';
+import { BeautifulEarthComponent } from './beautiful-earth/beautiful-earth.component';
 
 @NgModule({
   imports: [
@@ -60,6 +61,7 @@ import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-light
       { path: 'shipping', component: ShippingComponent },
        { path: 'graphic-design', component: GraphicDesignComponent },
       { path: 'my-resume', component: MyResumeComponent },
+      { path: 'beautiful-earth', component: BeautifulEarthComponent },
     ])
   ],
   declarations: [
@@ -77,7 +79,8 @@ import { PortfolioLightboxComponent } from './portfolio-lightbox/portfolio-light
     ResumeProfileComponent,
     ResumeWorkExperienceComponent,
     FngAccordionComponent,
-    PortfolioLightboxComponent
+    PortfolioLightboxComponent,
+    BeautifulEarthComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
