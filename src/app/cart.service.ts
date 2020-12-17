@@ -23,6 +23,11 @@ export class CartService {
     return this.http.get('/assets/shipping.json');
   }
 
+
+  getBeautifulEarth() {
+    return this.http.get('/assets/earth.json');
+  }
+
   getPortfolio(_file) {
     return this.http.get(_file);
   }
